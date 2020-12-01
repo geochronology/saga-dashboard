@@ -4,9 +4,7 @@ import { switchActiveTab } from "../tabs/tabActions";
 
 // worker
 function* handleTabChange(action) {
-  // yield call()
-  // call(switchActiveTab)
-  console.log(action.payload)
+  console.log("switching tab...")
 }
 
 // watcher
