@@ -9,15 +9,18 @@ The goal of this project is to create a reusable dashboard component with redux-
 ## Project Status
 
 ### In Progress
-[-] Complete redux setup
 [-] Wire up Dashboard container w store
-[x] Set up project structure
+
+
 
 ### To Do
-[ ] Load config into app
 
 
 ### Done
+[x] Refactor dashboard with activeTab prop
+[x] Load config into app
+[x] Complete saga setup
+[x] Complete redux setup
 [x] Set up project structure
 [x] Link w remote repo
 [x] Import all the things

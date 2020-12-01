@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from "react-redux";
 import { switchActiveTab } from "../redux";
+import { DashboardTable } from './DashboardTable';
 
 function DashboardContainer(props) {
 
@@ -11,10 +12,15 @@ function DashboardContainer(props) {
       <h2>Active Tab: {activeTab}</h2>
       <div>
 
-        <button onClick={() => switchActiveTab(1)} >Tab 1</button>
+        <button onClick={() => switchActiveTab(1)}>Tab 1</button>
         <button onClick={() => switchActiveTab(2)}>Tab 2</button>
         <button onClick={() => switchActiveTab(3)}>Tab 3</button>
         <button onClick={() => switchActiveTab(4)}>Tab 4</button>
+
+        <DashboardTable
+          activeTab={activeTab}
+
+        />
 
       </div>
     </div>
@@ -31,8 +37,6 @@ const mapDispatchToProps = dispatch => {
     switchActiveTab: (tab) => dispatch(switchActiveTab(tab))
   }
 }
-
-// export default DashboardContainer
 
 export default connect(
   mapStateToProps,
