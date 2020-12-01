@@ -38,10 +38,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(DashboardContainer)
-
-// export default function DashboardContainer() {
-//   return (
-//     <div>Dashboard</div>
-
-//   )
-// }
